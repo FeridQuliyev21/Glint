@@ -1,0 +1,1204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.up{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    right: 20px;
+    top: 550px;
+    z-index: 990;
+}
+.up a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    right: 80px;
+    top: 620px;
+    font-size: 13px;
+    z-index: 1;
+}
+.down a{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.down a i{
+    color: #13b528;
+    margin-right: 10px;
+}
+.orta_xett{
+    width: 1px;
+    height: 60px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+.orta_xett_alt{
+    width: 1px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+.bg_1 {
+    background: url(images/bg_1.jpeg)center/cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.bg_1::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7904411764705882) 100%, rgba(0,48,255,0) 100%);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.logo {
+    width: 80px;
+    height: 45px;
+    z-index: 1;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    height: 60px;
+    position: fixed;
+    right: 30px;
+    z-index: 999;
+}
+
+.menu p {
+    color: green;
+    font-size: 15px;
+}
+.icon_box{
+width: 40px;
+height: 35px;
+}
+.menu .icon_box i {
+    color: white;
+    font-size: 28px;
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qutu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+.qutu .yazilar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+.yazilar h3{
+    color: gray;
+    margin-bottom: 10px;
+}
+.yazilar h1{
+    color: white;
+    font-size: 35px;   
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1;
+}
+.buttons button{
+    width: 270px;
+    height: 45px;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: solid 3px rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.8s;
+}
+.bg_1 .icons{
+    position: absolute;
+    right: 15px;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bg_1 .icons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.bg_1 .icons div i{
+    border: solid 1px;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+.bg_1 .buttons button:hover{
+    background-color: white;
+    color: black;
+}
+.ic_menu{
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    
+    padding: 30px;
+    
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 999;
+}
+.ic_menu ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.ic_menu h3{
+    color: green;
+}
+.ic_menu div p{
+    color: grey;
+    width: 200px;
+    font-size: 13px;
+}
+.ic_menu div p span{
+    color: whitesmoke;
+}
+.ic_menu .icons_menu{
+    display: flex;
+    justify-content:left baseline;
+    gap: 10px;
+    color: white;
+}
+
+.container .navbar:hover .ic_menu{
+    visibility: visible;
+}
+.bg_2{
+    background-color: #39b54a;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.bg_2 .yazilar_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.bg_2 .yazilar_2 h1{
+    font-size: 40px;
+    color: white;
+}
+.bg_2 hr{
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    opacity: 0.5;
+}
+.bg_2 .kicik_yazi p{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.50;
+}
+.bg_2 .reqemler{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bg_2 .reqemler .reqem_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+.bg_2 .reqemler .reqem_box p:first-child{
+   font-size: 75px;
+   font-weight: bold;
+   color: white;
+}
+.bg_2 .reqemler .reqem_box p:last-child{
+   font-size: 20px;
+   font-weight: bold;
+   color: black;
+}
+.bg_2 .reqemler .reqem_box{
+    border-bottom: solid 1px rgb(255, 255, 255);
+    border-bottom: outset;
+}
+.bg_2 .reqemler .reqem_box:last-child{
+    border-bottom: 0;
+}
+.bg_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 80px;
+}
+.bg_3 .yazilar_basliq{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.bg_3 .yazilar_basliq h5{
+    color: green;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.bg_3 .yazilar_basliq h2{
+    font-size: 30px;
+}
+.bg_3 hr{
+    width: 270px;
+    opacity: 0.3;
+}
+.bg_3 .yazilar_3 div i{
+    font-size: 50px;
+    color: green;
+}
+.bg_3 .yazilar_3 div h3{
+    font-size: 23px;
+}
+.bg_3 .yazilar_3 div:last-child p{
+    color: gray;
+}
+.bg_3 .box_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.bg_3 .box_1 .yazilar_3{
+    text-align: center;
+    padding-block: 20px;
+}
+.bg_3 .box_1 .yazilar_3 p{
+    line-height: 1.75;
+}
+.bg_3 .box_1 .yazilar_3 h3{
+    padding-block: 20px;
+}
+.bg_4{
+    margin-bottom: 90px;
+}
+.bg_4 .yazilar_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 120px;
+    padding-bottom: 280px;
+}
+.bg_4 .yazilar_4 h3{
+ color: green;
+}
+.bg_4 .yazilar_4 h2{
+    color: white;
+    width: 82%;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.bg_4 .yazilar_4 hr{
+   width: 200px;  
+   opacity: 0.2;  
+}
+.bg_4 .sekiller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+    margin-top: -15rem;
+}
+
+.bg_4 .sekiller .sekil::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.697) 100%, rgba(0,48,255,0) 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: 1s;
+}
+.bg_4 .sekiller .sekil:hover::before{
+    opacity: 1;
+}
+
+.bg_4 .sekiller .sekiller{
+    overflow: hidden;
+}
+.bg_4 .sekiller .sekil img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.bg_4 .sekiller .sekil{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.bg_4 .sekiller .sekil .hover{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    gap: 5px;
+    visibility: hidden;
+    z-index: 2;
+}
+.bg_4 .sekiller .sekil .plus{
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    visibility: hidden;
+    z-index: 2;
+}
+.hover p:first-child{
+    color: white;
+    font-size: 16px;
+}
+.hover p:last-child{
+    color: gray;
+}
+.bg_4 .sekiller .sekil:hover .hover{
+    visibility: visible;
+}
+.bg_4 .sekiller .sekil:hover .plus{
+    visibility: visible;
+}
+
+.bg_4 .sekiller .sekil:hover img{
+    transform: scale(1.1);
+}
+.bg_5{
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+}
+.bg_5 hr{
+    width: 90%;
+    margin: 20px 0;
+    opacity: 0.3;
+}
+.bg_5 .yazilar_5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.bg_5 .yazilar_5 h5{
+    color: rgb(84, 188, 84);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.bg_5 .yazilar_5 h2{
+    display: flex;
+    font-size: 30px;
+}
+.bg_5 .yazilar_5 .logolar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+.bg_5 .yazilar_5 .logolar div i{
+    font-size: 40px;
+}
+.deg{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.ceo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.deg .ceo img{
+   width: 80px;
+   width: 80px;
+   border-radius: 50%;
+}
+.bg_5 .kicik_yazi_2{
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 50px;
+}
+.ceo p:last-child{
+    color: grey;
+    font-size: 13px;
+}
+.ceo p{
+    font-weight: bold;
+}
+.orta_xett_2{
+    width: 2px;
+    height: 140px;
+    background-color: #39b54a;
+    position: absolute;
+    bottom: -70px;
+    z-index: 1;
+}
+.bg_6{
+    background: url(/images/bg_6.jpg);
+    width: 100%;
+    position: relative;
+}
+.bg_6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bg_6 .yazilar_6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-bottom: 60px;
+    gap: 10px;
+}
+.bg_6 .yazilar_6 h3{
+    color: #39b54a;
+    font-size: 16px;
+}
+.bg_6 .yazilar_6 h2{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.bg_6 .mesaj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 30px;
+}
+.bg_6 .mesaj h6{
+    color: white;
+    font-size: 13px;
+}
+.bg_6 .black_bg{
+    width: 100%;
+    height: 78%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.bg_6 .mesaj .form input{
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: gray;
+}
+.bg_6 .mesaj .form input:focus{
+    border-bottom: 2px solid green;
+    outline: #39b54a;
+}
+
+.bg_6 .mesaj .form .submit{
+    background-color: #33d548;
+    color: white;
+    margin-top: 20px;
+    margin-left: 0;
+}
+.bg_6 .nomre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.bg_6 .nomre div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   gap: 10px;
+}
+.bg_6 .nomre div h4{
+    color: #39b54a;
+}
+.bg_6 .nomre div p{
+    color: grey;
+}
+.bg_6 .nomre .icons_menu{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 16px;
+    gap: 15px;
+}
+.bg_6 .row{
+    background-color: rgba(0, 0, 0, 0.312);
+    padding-block: 80px;
+}
+.bg_7{
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+}
+.bg_7 .yazilar_7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+.bg_7 .yazilar_7 p{
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 1.70;
+}
+.bg_7 .yazilar_7:first-child h2{
+    color: #39b54a;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.bg_7 h4{
+    color: white;
+}
+.form_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.bg_7 .form_2 form input{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    background: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+.bg_7 .form_2 form input:last-child{
+    background-color: #39b54a;
+    color: white;
+}
+.bg_7 .form_2 form input:focus{
+    outline: none;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.3);
+}
+.copyright span{
+    color: white;
+}
+
+
+
+
+@media (min-width: 300px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+    .bg_6 .row .nomre .info{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .qutu{
+        padding: 30px;
+    }
+   .bg_1 .icons{
+    visibility: hidden;
+    opacity: 0;
+   }
+   .navbar .menu p{
+    visibility: hidden;
+   }
+   .bg_4 .yazilar_4 h2 br{
+    display: none;
+   }
+   .bg_6 .row .mesaj form{
+     text-align: center;
+   }
+}
+
+
+
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .bg_6 .row .nomre .info{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .qutu{
+        margin-left: 25px;
+    }
+   .bg_1 .icons{
+    visibility: visible;
+    opacity: 1;
+   }
+   .bg_1 .icons div i{
+    border: none;
+   }
+   .qutu .yazilar h1{
+    width: 400px;
+    display: flex;
+    text-align: left;
+    font-size: 40px;
+   }
+   .qutu .yazilar h3{
+    display: flex;
+    text-align: left;
+   }
+   .navbar .menu p{
+    visibility: visible;
+   }
+   .bg_2 hr{
+    width: 60%;
+    opacity: 0.3;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.bg_2 .yazilar_2 h1{
+    font-size: 65px;
+}
+.bg_2 .kicik_yazi p{
+    line-height: 1.80;
+    font-size: 22px;
+}
+.bg_2 .kicik_yazi{
+    width: 95%;
+    text-align: center;
+}
+.bg_2 .reqemler{
+    width: 50%;
+}
+.bg_3 .yazilar_basliq h2{
+    font-size: 36px;
+}
+.bg_3 .yazilar_3 div:last-child p{
+    width: 420px;
+    line-height: 1.80;
+}
+.sekil{
+    width: 380px;
+    height: 335px;
+}
+.bg_4 .yazilar_4 h2{
+    font-size: 35px; 
+}
+.bg_4 .yazilar_4 h2 br{
+    display: none;
+}
+
+.bg_5 .yazilar_5 .logolar div i{
+    font-size: 90px;
+}
+.bg_5 .yazilar_5 h2{
+    width: 450px;
+    font-size: 32px;
+}
+.bg_5 hr{
+    width: 40%;
+}
+.bg_5 .deg .kicik_yazi_2{
+    line-height: 1.70;
+    width: 460px;
+}
+.bg_6 .yazilar_6{
+    margin: 150px 40px;
+}
+
+.bg_6 .mesaj .form input{
+    width: 80%;
+}
+
+.form_2 form{
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    .bg_6 .row .nomre .info{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .bg_1 .icons div i{
+        border: solid 1px white;
+    }
+     .bg_1 .buttons{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .bg_2 .reqemler{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        padding: 0;
+        width: 80%;
+    }
+    .bg_2 .reqemler .reqem_box{
+        border: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .bg_2 .reqemler .reqem_box:nth-child(odd){
+        border-right: solid 1px white;
+        border-right: outset;
+    }
+    .bg_3 .yazilar_basliq:first-child{
+        margin: 50px;
+    }
+    .bg_3 .yazilar_basliq h2{
+        font-size: 40px;
+    }
+    .bg_3 hr{
+        width: 50%;
+    }
+    
+    .bg_3 .box_1 .yazilar_3 h3{
+        font-size: 30px;
+    }
+    .bg_4 .yazilar_4 h3{
+        font-size: 25px;
+    }
+    .bg_4 .yazilar_4 h2{
+        font-size: 40px;
+        width: 600px; 
+    }
+    br{
+        display: none;
+    }
+    .bg_4 .yazilar_4 hr{
+        width: 50%;
+        opacity: 0.1;
+    }
+  
+    .bg_4 .sekiller{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+    .bg_4 .sekiller .sekil{
+        width: 100%;
+        height: 100%;
+    }
+    .bg_4 .sekiller .sekil img{
+        object-fit: cover;
+    }
+    .bg_5 .yazilar_5 h2{
+        font-size: 40px;
+        width: 650px;
+    }
+    .bg_5 .yazilar_5 h5{
+        font-size: 20px;
+    }
+    .qutu .yazilar{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 80px;
+        z-index: 1;
+        margin-left: 50px;
+        margin-top: 80px;
+    }
+    .qutu .yazilar h1{
+        font-size: 45px;
+        width: 520px;
+    }
+    .qutu .buttons{
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        margin-left: 50px;
+    }
+    .qutu .buttons button{
+        height: 55px;
+    }
+    .bg_6{
+        padding-block: 100px;
+    }
+    .bg_6 .row{
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+        background-color: rgba(0, 0, 0, 0.288);
+        width: 90%;
+        gap: 40px;
+    }
+    .bg_6 .row .nomre{
+        margin: 0;
+        flex-direction: column;
+        display: flex;
+        justify-content: left;
+        align-items: start;
+        text-align: left;
+    }
+    .bg_6 .row .nomre div{
+        align-items: start;
+        justify-content: left;
+        text-align: start;
+    }
+    .bg_6 .yazilar_6{
+        margin-block: 0;
+        padding-block: 90px;
+    }
+    .bg_6 .yazilar_6 h2{
+      font-size: 40px;
+      width: 80%;
+    }
+    .bg_6 .row .mesaj{
+        justify-content: left;
+        align-items: start;
+        margin: 0;
+    }
+    .bg_6 .row .mesaj form{
+     text-align: left;
+    }
+    .bg_6 .row .mesaj form input{
+        width: 100%;
+    }
+    
+    
+    .bg_7 .copyright{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+
+
+
+
+
+@media (min-width: 991px) {
+    .container {
+        max-width: 960px;
+        margin: 15px auto;
+    }
+    .bg_6 .row .nomre .info{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .bg_1 .qutu{
+        margin-left: 80px;
+    }
+    .bg_1 .qutu .yazilar h1{
+        font-size: 50px;
+        width: 650px;
+    }
+    .bg_1 .icons{
+        position: absolute;
+        top: 280px;
+        right: 60px;
+    }
+    .bg_3 .box_1{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        place-items: center;
+        width: 100%;
+    }
+    .bg_3 .box_1 .yazilar_3{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .bg_3 .box_1 .yazilar_3 div:last-child p{
+        width: 0;
+    }
+    .bg_3 .box_1 .yazilar_3 div:last-child p{
+        width: 300px;
+    }
+    .bg_3 .box_1 .yazilar_3 div:last-child{
+        text-align: left;
+    }
+    .bg_3 .box_1 .yazilar_3 div:first-child i{
+        padding: 20px;
+    }
+    .bg_4 .sekiller{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .bg_7{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .bg_7 #yazilar7{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+    .bg_7 h4{
+        width: 220px;
+        text-align: right;
+    }
+    .bg_7 #yazilar7 .yazilar_7 p{
+        width: 300px;
+    }
+    .bg_7 .yazilar_7:first-child, #yazilar7{
+        margin-bottom: 100px;
+    }
+    .bg_7 .copyright{
+        position: absolute;
+        bottom: 50px;
+    }
+    
+}
+
+
+
+
+
+@media (min-width: 1201px) {
+    .container {
+        max-width: 98%;
+    }
+    .bg_1 .qutu .yazilar h1{
+        font-size: 65px;
+        width: 800px;
+    }
+    .bg_1 .qutu{
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    .bg_2 .yazilar_2 h1{
+        font-size: 85px;
+    }
+    .bg_2 .yazilar_2 h4{
+        font-size: 20px;
+    }
+    .bg_2 .kicik_yazi{
+        width: 80%;
+    }
+    
+    .bg_2 .reqemler{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bg_2 .reqemler .reqem_box{
+        margin: 0;
+        width: 100%;
+    }
+    .bg_2 .reqemler .reqem_box p:first-child{
+        font-size: 90px;
+    }
+    .bg_2 .reqemler .reqem_box:nth-child(2){
+        border-right: solid 1px white;
+        border-right: outset;
+    }
+
+    .bg_3 .yazilar_basliq h5{
+        font-size: 20px;
+    }
+    .bg_3 .yazilar_basliq h2{
+        font-size: 55px;
+        width: 900px;
+    }
+
+
+    .bg_4 .yazilar_4 h2{
+        font-size: 55px;
+        width: 900px;
+    }
+    
+    
+    .bg_5 .yazilar_5 h2{
+        font-size: 55px;
+        width: 900px;
+    }
+    .bg_5 .deg .kicik_yazi_2{
+        font-size: 35px;
+        width: 800px;
+    }
+    .bg_6 .row .nomre .info{
+        visibility: visible;
+        opacity: 1;
+    }
+    .bg_6 .row{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 0;
+    
+    }
+    .bg_6 .row .nomre{
+        justify-content: left;
+        width: 40%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.445);
+        padding-block: 50px;
+        padding-left: 10px;
+    }
+    .bg_6 .row .nomre div{
+        gap: 20px;
+    }
+    .bg_6 .row .mesaj{
+        width: 70%;
+        padding-block: 50px;
+        padding-left: 10px;
+    }
+    .bg_6 .row .nomre .info p{
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    
+    .bg_6 .row .nomre .icons_menu{
+        margin-right: 60px;
+    }
+    .row .mesaj{
+        margin-left: 160px;
+    }
+    .bg_6 .black_bg{
+        height: 650px;
+    bottom: 0;
+    }
+    .bg_6 .yazilar_6 h2{
+        font-size: 55px;
+    }
+}
+
+
+
+
+
+
+
